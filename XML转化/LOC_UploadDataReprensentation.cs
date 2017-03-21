@@ -1,0 +1,18 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Xml.Serialization;
+
+namespace XML转化
+{
+    [XmlRoot("status")]
+    public class LOC_UploadDataReprensentation: BaseRootRepsentation
+    {
+        [XmlElement("flag")]
+        public int flag { get; set; }
+        [XmlElement("errorCode")]
+        public int errorCode { get; set; }
+    }
+}
